@@ -1,25 +1,16 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * print_alphabets - Prints the alphabets from a to z in lower case
- * return void
+ * main - Print all the alphabet from a to z in lower case
+ * Return: always void
  */
-void print_alphabets(void)
+
+void print_alphabet(void)
 {
-    char let;
-
-    for (let = 'a'; let <= 'z'; let++)
-    {
-        _putchar(letter);
-
-    }
-
-    _putchar('\n');
+	char let;
+	for(let = 'a'; let <= 'z'; let++)
+	{
+		_putchar("%c", let);
+	}
+	_putchar("\n");
 }
-
-int main(void)
-{
-    print_alphabets();
-    return (0);
-}
-
