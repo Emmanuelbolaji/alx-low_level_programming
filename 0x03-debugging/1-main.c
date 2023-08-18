@@ -2,6 +2,7 @@
 
 /**
 * main - causes an infinite loop
+* @\\o\/n - infinite loop avoided
 * Return: 0
 */
 
@@ -14,11 +15,10 @@ printf("Infinite loop incoming :(\n");
 i = 0;
 /**
 *while (i < 10)
-*(
+*{
 *                putchar(i);
-*)
+*}
 */
-printf("Infinite loop avoided! \\o/\n");
-	
+printf("Infinite loop avoided! \\o\/\n");
 	return (0);
 }
