@@ -1,20 +1,38 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void print_numbers(const char *separator, const unsigned int n, ...) {
-    unsigned int a;
+/**
+ * print_strings - a function that prints strings, followed by a new line.
+ * @separator: arguement
+ * @n: arguement
+ */
+
+void print_strings(const char *separator, const unsigned int n, ...)
+{
+	unsigned int a;
+	const char *str;
 	va_list args;
-    va_start(args, n);
 
-    for (a = 0; a < n; a++) {
-        int num = va_arg(args, int);
-        _putchar("%d", num);
+	va_start(args, n);
+	str = va_arg(args, const char *);
 
-        if (separator != NULL && i < n - 1) {
-            _putchar("%s", separator);
-        }
-    }
+	for (a = 0; a < n; a++)
+		if (str == NULL)
+		{
+			printf("(nil)");
+		}
+		else
+		{
+			printf("%s", str);
+		}
 
-    va_end(args);
-    _putchar("\n");
+	if (a < n - 1)
+	{
+		if (separator != NULL)
+		{
+			printf("%s", separator);
+		}
+	}
+	va_end(args);
+	printf("\n");
 }
