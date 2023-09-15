@@ -2,7 +2,14 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void print_numbers(const char *separator, const unsigned int n, ...) {
+/**
+ * print_numbers - funcion that prints number
+ * @separator: arguement in function
+ * @n: arguement in function
+ */
+
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
 int num;
 unsigned int a;
 va_list args;
