@@ -13,7 +13,7 @@
  *
  * Description: singly linked list node structure
  */
-ii
+
 typedef struct list_s
 {
 	char *str;
