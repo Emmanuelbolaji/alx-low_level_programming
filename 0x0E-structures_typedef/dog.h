@@ -6,15 +6,16 @@
  * @name: name of he dog(a string)
  * @age: age of the dog(a float)
  * @owner: owner of the dog(a string)
- * Description: contains grouped data ona dog
+ * Description: contains grouped data on a dog
  */
-
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
+
+typedef struct dog dog_t;
 
 #include <stdio.h>
 #include <stdlib.h>
