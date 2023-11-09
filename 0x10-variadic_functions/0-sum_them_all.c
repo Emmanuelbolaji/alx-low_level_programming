@@ -9,8 +9,9 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
-        int add = 0;
+	int add = 0;
 	va_list tray;
+
 	va_start(tray, n);
 
 	if (n == 0)
